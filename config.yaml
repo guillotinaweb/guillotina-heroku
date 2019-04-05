@@ -1,0 +1,36 @@
+---
+debug: true
+databases:
+  db:
+    storage: postgresql
+    transaction_strategy: resolve_readcommitted
+    dsn: postgresql://postgres@localhost:5432/guillotina
+    pool_size: 40
+    read_only: false
+    statement_cache_size: 100
+    max_cached_statement_lifetime: 300
+host: 0.0.0.0
+port: 8080
+root_user:
+  password: root
+cors:
+  allow_origin:
+  - "*"
+  allow_methods:
+  - GET
+  - POST
+  - DELETE
+  - HEAD
+  - PATCH
+  - PUT
+  allow_headers:
+  - "*"
+  expose_headers:
+  - "*"
+  allow_credentials: true
+  max_age: 3660
+utilities: []
+jsapps:
+  +admin: guillotina:static/executioner
+static:
+  assets: guillotina:static/assets

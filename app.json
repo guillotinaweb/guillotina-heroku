@@ -1,0 +1,25 @@
+{
+  "name": "Guillotina: The Python AsyncIO REST API Framework",
+  "description": "Guillotina is the only full-featured Python AsyncIO REST Resource Application Server designed for high-performance, horizontally scaling solutions",
+  "logo": "https://guillotina.readthedocs.io/en/latest/_static/img/logo.svg",
+  "keywords": [
+    "database",
+    "heroku",
+    "postgres",
+		"guillotina"
+  ],
+  "success_url": "/",
+  "website": "https://guillotina.readthedocs.io/en/latest/",
+  "repository": "https://github.com/guillotinaweb/guillotina-heroku",
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql:hobby-dev"
+    }
+  ]
+}
