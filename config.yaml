@@ -29,6 +29,9 @@ cors:
   - "*"
   allow_credentials: true
   max_age: 3660
+jwt:
+  secret: secret
+  algorithm: HS256
 utilities: []
 jsapps:
   +admin: guillotina:static/executioner
